@@ -3,9 +3,10 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/pati-padhaye-python/',
-  server: { host: true },
+  base: './',
   build: {
-    assetsDir: 'assets'
-  }
+    assetsDir: 'assets',
+    emptyOutDir: true
+  },
+  server: { host: true }
 })
